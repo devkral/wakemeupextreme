@@ -1,5 +1,4 @@
 #! /usr/bin/env python3
-__license__ = "Public Domain"
 
 from setuptools import setup
 
@@ -12,7 +11,7 @@ install_requirements = []
 
 install_extras = {}
 # for markdown help
-install_extras["leds"] = ["gpiozero"]
+install_extras["leds"] = ["RPi.GPIO"]
 
 entry_points["gui_scripts"].append('wakemeupextreme = wakemeupextreme.__main__:main')
 
