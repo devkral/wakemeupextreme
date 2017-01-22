@@ -1,0 +1,25 @@
+
+MainWidget:
+    Label:
+        id: calculationshow
+        pos_hint: {"x": 0, 'y': 0.8}
+        size_hint: 1, 0.2
+        text: "no question"
+    TextInput:
+        id: calculationinput
+        multiline: False
+        pos_hint: {"x": 0, 'y': 0.6}
+        size_hint: 0.8, 0.2
+        hint_text: "Enter solution"
+        focus: True
+        on_double_tap: root.enter_calc()
+    Button:
+        pos_hint: {"x": 0.8, 'y': 0.6}
+        size_hint: 0.2, 0.2
+        text: 'Enter'
+        on_press: root.enter_calc()
+    Button:
+        pos_hint: {"x": 0.8, 'y': 0}
+        size_hint: 0.2, 0.6
+        text: 'Back'
+        on_press: calculationinput.text = calculationinput.text[:-1]
