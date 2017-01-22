@@ -11,7 +11,7 @@ install_requirements = []
 
 install_extras = {}
 # for markdown help
-install_extras["leds"] = ["RPi.GPIO"]
+install_extras["leds"] = ["RPi.GPIO>0.6"]
 
 entry_points["gui_scripts"].append('wakemeupextreme = wakemeupextreme.__main__:main')
 
